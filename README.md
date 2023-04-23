@@ -40,7 +40,7 @@ Finally, run the command `npm run dev` to start the frontend.
 
 Your app will now be avalible at: http://localhost:3010
 
-Extending the task:
+## Extending the task:
 If I were to spend more time, I would the task by adding features such as:
  - Unit tests for individual functions
  - Integration tests for API endpoints
