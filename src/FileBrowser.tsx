@@ -83,7 +83,6 @@ const fetchBucketItem = async (
     .then((response) => response.json())
     .then((data) => data)
     .catch((error) => console.error(error));
-  console.log(data);
   return data;
 };
 
@@ -154,7 +153,6 @@ export const VFSBrowser: React.FC = () => {
         if (!data.payload.targetFile || !data.payload.targetFile.isDir) return;
 
         const newPrefix = `${data.payload.targetFile.id.replace(/\/*$/, '')}/`;
-        console.log(`Key prefix: ${newPrefix}`);
         setKeyPrefix(newPrefix);
       }
     },
