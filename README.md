@@ -4,7 +4,7 @@ The s3-bucket-browser is a file browser for private S3 buckets, built with Vite,
 ![browser demo](./demo.gif)
 
 ## Prerequisites:
-Before using this project, you need to create a user with read and list permissions for the bucket you wish to browse. Create an access key for the user and make a copy of the Access Key ID and the Secret Access Key.
+Before using this project, you need to create a user with read and list permissions for the bucket you wish to browse. If running locally set the bucket cors to accept traffic from local host. Create an access key for the user and make a copy of the Access Key ID and the Secret Access Key.
 
 ## Installation:
 You can clone the git repository by running the following command:
@@ -43,6 +43,8 @@ Your app will now be avalible at: http://localhost:3010
 ## Extending the task:
 If I were to spend more time, I would the task by adding features such as:
  - Unit tests for individual functions
+ - Remove any hard coded variables such as local host
+ - Add some auth to the backend to secure it
  - Integration tests for API endpoints
  - Auto generating thumbnails
  - The ability to switch bucket in the browser
